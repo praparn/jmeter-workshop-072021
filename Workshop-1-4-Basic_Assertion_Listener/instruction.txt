@@ -89,7 +89,7 @@ Part 3: Start Performance Test Scenario 3 (Add Assertion/More Listener)
         Apply to: [x] Main sample and sub-samples
         Response Size Field to Test: 
             [x] Full Response
-        Size in bytes: 27000
+        Size in bytes: 50000
         Type of Comparison: <=
 
 4. (Load Test Machine) Start run jmeter by menu: Run ==> Start

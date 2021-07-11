@@ -8,8 +8,9 @@ Part 1 : Start Performance Test (Load Test Machine)
 Part 2: Start Performance Test Scenario 1 (Scratch Test)
 ============================================================================================
 0. (Load Test Machine): Clone repository for all test plan as command below:
-    cd ~
-    git clone https://github.com/praparn/jmeter-workshop-062019.git
+   cd ~
+   git clone https://github.com/praparn/jmeter-workshop-072021
+   *Remark: Check public ip of Load test by command: "curl http://ifconfig.co"
 
 1. (Local machine): Open url of all MEAN.JS in browser: 
     1.1 MEAN: ==> http://<Application Machine>:3000
@@ -20,14 +21,14 @@ Part 2: Start Performance Test Scenario 1 (Scratch Test)
 
 2. (Load Test Machine) Run GUI on JMETER by command: 
     cd ~
-    cd ./apache-jmeter-5.1.1/bin/jmeter
+    cd ./apache-jmeter-5.4.1/bin/jmeter
 
 3. (Load Test Machine) Create Test Plan and configure properties below:
     Name: WorkShop_1_3
     [User Defined Variables]
         Name: BaseIP            Value: <Private IP of Application Machine>
-        Name: MariaUserName     Value: magento
-        Name: MariaPassWord     Value: magento
+        Name: MariaUserName     Value: bn_magento 
+        Name: MariaPassWord     Value: bitnami 
         Name: MariaPort         Value: 3306
         Name: MongoDBPort       Value: 27017
         Name: MeanPort          Value: 3000

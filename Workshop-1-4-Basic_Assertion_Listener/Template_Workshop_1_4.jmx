@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="WorkShop_1_4" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -59,6 +59,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MEAN.JS HTTP Request" enabled="true">
@@ -187,7 +188,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="2119771055">Powered-By: PHP/7.2.21</stringProp>
+              <stringProp name="2119830637">Powered-By: PHP/7.4.21</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -215,7 +216,7 @@
             <longProp name="compareTime">-1</longProp>
             <collectionProp name="stringsToSkip">
               <elementProp name="" elementType="SubstitutionElement">
-                <stringProp name="regex">5.5.5-10.3.15-MariaDB&#x0;</stringProp>
+                <stringProp name="regex">5.5.5-10.3.30-MariaDB&#x0;</stringProp>
                 <stringProp name="substitute"></stringProp>
               </elementProp>
             </collectionProp>
@@ -341,7 +342,7 @@ else {
         <hashTree/>
         <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion" enabled="true">
           <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-          <stringProp name="SizeAssertion.size">27000</stringProp>
+          <stringProp name="SizeAssertion.size">50000</stringProp>
           <intProp name="SizeAssertion.operator">6</intProp>
           <stringProp name="Assertion.scope">all</stringProp>
         </SizeAssertion>
