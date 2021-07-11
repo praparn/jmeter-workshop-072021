@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="WorkShop_1_3" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -15,12 +15,12 @@
           </elementProp>
           <elementProp name="MariaUserName" elementType="Argument">
             <stringProp name="Argument.name">MariaUserName</stringProp>
-            <stringProp name="Argument.value">magento</stringProp>
+            <stringProp name="Argument.value">bn_magento</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MariaPassWord" elementType="Argument">
             <stringProp name="Argument.name">MariaPassWord</stringProp>
-            <stringProp name="Argument.value">magento</stringProp>
+            <stringProp name="Argument.value">bitnami</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MariaPort" elementType="Argument">
@@ -59,6 +59,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MEAN.JS HTTP Request" enabled="true">

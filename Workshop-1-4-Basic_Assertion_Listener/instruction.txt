@@ -55,7 +55,7 @@ Part 3: Start Performance Test Scenario 3 (Add Assertion/More Listener)
             Apply to: [x] ] Sub-samples only
             Field to Test: [x] Response Header
             Pattern matching Rule: [x] Contains
-            Patterns to Test: "X-Powered-By: PHP/7.2.21"
+            Patterns to Test: "X-Powered-By: PHP/7.4.21"
 
     1.3 MariaDBTCPSampler (Sampler)
         1.3.1 Open menu: (Add ==> Assertion ==> Compare Assertion)
@@ -63,7 +63,7 @@ Part 3: Start Performance Test Scenario 3 (Add Assertion/More Listener)
             Name: MariaDB Assertion
             Compare Content: True
             Compare Time: -1
-            Regex String: "5.5.5-10.3.15-MariaDB"
+            Regex String: "5.5.5-10.3.30-MariaDB"
 
     1.4 MongoDBJSR223Sampler (Sampler) 
         1.4.1 Open menu: (Add ==> Assertion ==> Duration Assertion)

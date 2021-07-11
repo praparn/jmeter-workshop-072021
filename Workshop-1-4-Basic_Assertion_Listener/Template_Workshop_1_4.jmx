@@ -15,12 +15,12 @@
           </elementProp>
           <elementProp name="MariaUserName" elementType="Argument">
             <stringProp name="Argument.name">MariaUserName</stringProp>
-            <stringProp name="Argument.value">magento</stringProp>
+            <stringProp name="Argument.value">bn_magento</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MariaPassWord" elementType="Argument">
             <stringProp name="Argument.name">MariaPassWord</stringProp>
-            <stringProp name="Argument.value">magento</stringProp>
+            <stringProp name="Argument.value">bitnami</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MariaPort" elementType="Argument">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.1">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="KickStart_MAGENTO_WorkShop_1_5" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -15,12 +15,12 @@
           </elementProp>
           <elementProp name="MariaUserName" elementType="Argument">
             <stringProp name="Argument.name">MariaUserName</stringProp>
-            <stringProp name="Argument.value">magento</stringProp>
+            <stringProp name="Argument.value">bn_magento</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MariaPassWord" elementType="Argument">
             <stringProp name="Argument.name">MariaPassWord</stringProp>
-            <stringProp name="Argument.value">magento</stringProp>
+            <stringProp name="Argument.value">bitnami</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MariaPort" elementType="Argument">
@@ -72,11 +72,13 @@
       <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
         <collectionProp name="CookieManager.cookies"/>
         <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
       <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager" enabled="true">
         <boolProp name="clearEachIteration">true</boolProp>
         <boolProp name="useExpires">true</boolProp>
+        <boolProp name="CacheManager.controlledByThread">false</boolProp>
       </CacheManager>
       <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group 10 Users" enabled="false">
@@ -90,6 +92,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MEGENTO HTTP Request" enabled="true">
@@ -118,7 +121,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="697970884">X-Powered-By: PHP/7.2.21</stringProp>
+              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -129,14 +132,14 @@
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Minimum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">6800</stringProp>
+            <stringProp name="SizeAssertion.size">5000</stringProp>
             <intProp name="SizeAssertion.operator">3</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Maximum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">8000</stringProp>
+            <stringProp name="SizeAssertion.size">19000</stringProp>
             <intProp name="SizeAssertion.operator">4</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
@@ -149,7 +152,6 @@
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">8</intProp>
-            <stringProp name="Assertion.scope">all</stringProp>
           </ResponseAssertion>
           <hashTree/>
           <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
@@ -432,6 +434,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MEGENTO HTTP Request" enabled="true">
@@ -460,7 +463,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="697970884">X-Powered-By: PHP/7.2.21</stringProp>
+              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -471,14 +474,14 @@
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Minimum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">6800</stringProp>
+            <stringProp name="SizeAssertion.size">5000</stringProp>
             <intProp name="SizeAssertion.operator">3</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Maximum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">8000</stringProp>
+            <stringProp name="SizeAssertion.size">19000</stringProp>
             <intProp name="SizeAssertion.operator">4</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
@@ -491,7 +494,6 @@
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">8</intProp>
-            <stringProp name="Assertion.scope">all</stringProp>
           </ResponseAssertion>
           <hashTree/>
           <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
@@ -774,6 +776,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MEGENTO HTTP Request" enabled="true">
@@ -802,7 +805,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="697970884">X-Powered-By: PHP/7.2.21</stringProp>
+              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -813,14 +816,14 @@
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Minimum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">6800</stringProp>
+            <stringProp name="SizeAssertion.size">5000</stringProp>
             <intProp name="SizeAssertion.operator">3</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Maximum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">8000</stringProp>
+            <stringProp name="SizeAssertion.size">19000</stringProp>
             <intProp name="SizeAssertion.operator">4</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
@@ -833,7 +836,6 @@
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">8</intProp>
-            <stringProp name="Assertion.scope">all</stringProp>
           </ResponseAssertion>
           <hashTree/>
           <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
@@ -1116,6 +1118,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MEGENTO HTTP Request" enabled="true">
@@ -1144,7 +1147,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="697970884">X-Powered-By: PHP/7.2.21</stringProp>
+              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -1155,14 +1158,14 @@
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Minimum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">6800</stringProp>
+            <stringProp name="SizeAssertion.size">5000</stringProp>
             <intProp name="SizeAssertion.operator">3</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Maximum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">8000</stringProp>
+            <stringProp name="SizeAssertion.size">19000</stringProp>
             <intProp name="SizeAssertion.operator">4</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
@@ -1175,7 +1178,6 @@
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">8</intProp>
-            <stringProp name="Assertion.scope">all</stringProp>
           </ResponseAssertion>
           <hashTree/>
           <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">
@@ -1458,6 +1460,7 @@
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="MEGENTO HTTP Request" enabled="true">
@@ -1486,7 +1489,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="697970884">X-Powered-By: PHP/7.2.21</stringProp>
+              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -1497,14 +1500,14 @@
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Minimum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">6800</stringProp>
+            <stringProp name="SizeAssertion.size">5000</stringProp>
             <intProp name="SizeAssertion.operator">3</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
           <hashTree/>
           <SizeAssertion guiclass="SizeAssertionGui" testclass="SizeAssertion" testname="Size Assertion Maximum" enabled="true">
             <stringProp name="Assertion.test_field">SizeAssertion.response_network_size</stringProp>
-            <stringProp name="SizeAssertion.size">8000</stringProp>
+            <stringProp name="SizeAssertion.size">19000</stringProp>
             <intProp name="SizeAssertion.operator">4</intProp>
             <stringProp name="Assertion.scope">all</stringProp>
           </SizeAssertion>
@@ -1517,7 +1520,6 @@
             <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
             <boolProp name="Assertion.assume_success">false</boolProp>
             <intProp name="Assertion.test_type">8</intProp>
-            <stringProp name="Assertion.scope">all</stringProp>
           </ResponseAssertion>
           <hashTree/>
           <DurationAssertion guiclass="DurationAssertionGui" testclass="DurationAssertion" testname="Duration Assertion" enabled="true">

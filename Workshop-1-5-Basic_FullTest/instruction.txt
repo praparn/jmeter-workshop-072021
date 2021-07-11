@@ -11,12 +11,12 @@ Part 2: Basic LoadTest for MEAN.JS
 
 1. (Local machine): Verify and Config "User Defined Variables" from Test Plan: "KickStart_MEANJS_WorkShop"
     BaseIP: <Add private ip of application machine>
-    MariaUserName:  <Verify>
-    MariaPassWord:  <Verify>
-    MariaPort:      <Verify>
-    MongoDBPort:    <Verify>
-    MeanPort:       <Verify>
-    MegentoPort:    <Verify>
+    MariaUserName:  <Verify> bn_magento
+    MariaPassWord:  <Verify> bitnami
+    MariaPort:      <Verify> 3306
+    MongoDBPort:    <Verify> 27017
+    MeanPort:       <Verify> 3000
+    MegentoPort:    <Verify> 80
 
 2. (Load Test Machine) Verify Config Element on Test Plan
     2.1 HTTP Header for Android:
@@ -82,9 +82,7 @@ Part 3: Basic LoadTest for MAGENTO
     5.3 Listener: Summary Report
     5.4 Listener: Response Time Graph
 
-*Remark:
-    If you have time slot more. Let's try to enable 30 thread group for test and disable existing thread group (Enable one-by-one)
 
 6. (Application Server) Remove container of magento for reserve resource
-    docker stop magento phpmyadmin mariadb
-    docker rm magento phpmyadmin mariadb
+    docker stop magento phpmyadmin mariadb elasticsearch
+    docker rm magento phpmyadmin mariadb elasticsearch
