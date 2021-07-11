@@ -171,13 +171,15 @@ magento 01:30:52.39 INFO  ==> ** Starting Apache **
 [Sun Jul 11 01:30:52.856502 2021] [core:notice] [pid 1] AH00094: Command line: '/opt/bitnami/apache/bin/httpd -f /opt/bitnami/apache/conf/httpd.conf -D FOREGROUND'
 
     ****************************************************************************************
+6. (Application Machine) Stop elasticsearch (For free-up resource):
+    docker container stop elasticsearch
 
-8. (Load Test Machine) Open phpmyadmin and get username/password of Magento:
-    Open url: http://<public ip of Magento>:8091   ==> for phpmyadmin   (username:bn_magento, password: bitnami)
+7. (Load Test Machine) Open phpmyadmin and get username/password of Magento:
+    Open url: http://<private ip of Magento>:8091   ==> for phpmyadmin   (username:bn_magento, password: bitnami)
 
-9. (Load Test Machine) Open url for website
-    Open url: http://<public ip of Magento>       ==> for Magento Application
-    Open url: http://<public ip of Magento>/admin  ==> for Magento Application (Admin Page) (User: user, Password: bitnami1)
+8. (Load Test Machine) Open url for website
+    Open url: http://<private ip of Magento>       ==> for Magento Application
+    Open url: http://<private ip of Magento>/admin  ==> for Magento Application (Admin Page) (User: user, Password: bitnami1)
     
 *Remark:
     Case Roll Back:

@@ -21,7 +21,7 @@ Part 2: Start Performance Test Scenario 1 (Scratch Test)
 
 2. (Load Test Machine) Run GUI on JMETER by command: 
     cd ~
-    cd ./apache-jmeter-5.4.1/bin/jmeter
+    ./apache-jmeter-5.4.1/bin/jmeter
 
 3. (Load Test Machine) Create Test Plan and configure properties below:
     Name: WorkShop_1_3
@@ -103,7 +103,7 @@ Part 2: Start Performance Test Scenario 1 (Scratch Test)
     7.3 Set Properties:
          Name: MongoDBJSR223Sampler
          [Script language]
-            Language: groovy (Groovy 2.4.16 / Groovy Scription Engine 2.0)
+            Language: groovy (Groovy 3.0.7 / Groovy Scription Engine 2.0)
         
          [Script compilation caching]
     
