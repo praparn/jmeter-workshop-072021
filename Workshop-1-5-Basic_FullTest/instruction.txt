@@ -23,7 +23,7 @@ Part 2: Basic LoadTest for MEAN.JS
     2.2 HTTP Cookie Manager:
     2.3 HTTP Cache Manager:
 
-3. (Load Test Machine) Enable Thread Group "Thread Group 100 Users" and Run (Total 5 min for lab before stop)
+3. (Load Test Machine) Enable Thread Group "Thread Group 100 Users" and Run (Total 2 min for lab before stop)
 
 
 4. (Application Machine) During load test was run. Check resource consume via cAdvisor, command listening   
@@ -35,7 +35,7 @@ Part 2: Basic LoadTest for MEAN.JS
         4.1.5 sar -n DEV 2
 
 
-5. (Load Test Machine) After pass 5 min stop load test and check result from JMeter
+5. (Load Test Machine) After pass 2 min stop load test and check result from JMeter
     5.1 Listener: Result
     5.2 Listener: View Results in Table
     5.3 Listener: Summary Report
@@ -64,7 +64,7 @@ Part 3: Basic LoadTest for MAGENTO
     2.2 HTTP Cookie Manager:
     2.3 HTTP Cache Manager:
 
-3. (Load Test Machine) Enable Thread Group "Thread Group 10 Users" and Run (Total 5 min for lab before stop)
+3. (Load Test Machine) Enable Thread Group "Thread Group 10 Users" and Run (Total 2 min for lab before stop)
 
 
 4. (Application Machine) During load test was run. Check resource consume via cAdvisor, command listening   
@@ -76,7 +76,7 @@ Part 3: Basic LoadTest for MAGENTO
         4.1.5 sar -n DEV 2
 
 
-5. (Load Test Machine) After pass 5 min stop load test and check result from JMeter
+5. (Load Test Machine) After pass 2 min stop load test and check result from JMeter
     5.1 Listener: Result
     5.2 Listener: View Results in Table
     5.3 Listener: Summary Report
