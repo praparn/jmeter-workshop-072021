@@ -6,7 +6,7 @@ Part 1: Instll Plugin Manager / Open JMeter
 
 2. (Load Test Machine) In case UltraVNC is cannot connect. Kill and recreate vnc session by command:
     vncserver -kill :1
-    vncserver -geometry 1600x900 :1
+    vncserver -localhost no -geometry 1600x900 :1
 
 3. (Load Test Machine) Open Jmeter GUI (If disapper. Please run
     cd ~
