@@ -121,7 +121,7 @@ Step 2: Setup Magento (Application Machine)
   --env MAGENTO_DATABASE_PASSWORD=bitnami \
   --env ELASTICSEARCH_HOST=elasticsearch \
   --env ELASTICSEARCH_PORT_NUMBER=9200 \
-  --env MAGENTO_HOST=<Public IP of Application Machine> --network jmeter bitnami/magento:latest
+  --env MAGENTO_HOST=<Private IP of Application Machine> --network jmeter bitnami/magento:latest
 
     *Remark:
     DB Name: magento
