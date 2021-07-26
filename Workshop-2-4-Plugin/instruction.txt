@@ -2,7 +2,7 @@
 Part 1: Instll Plugin Manager / Open JMeter 
 ============================================================================================
 1. (Load Test Machine) Download JAR file command: 
-    curl http://search.maven.org/remotecontent?filepath=kg/apc/jmeter-plugins-manager/1.3/jmeter-plugins-manager-1.3.jar > ~/apache-jmeter-5.1.1/lib/ext/jmeter-plugins-manager-1.3.jar
+    curl https://repo1.maven.org/maven2/kg/apc/jmeter-plugins-manager/1.6/jmeter-plugins-manager-1.6.jar > ~/apache-jmeter-5.4.1/lib/ext/jmeter-plugins-manager-1.6.jar
 
 2. (Load Test Machine) In case UltraVNC is cannot connect. Kill and recreate vnc session by command:
     vncserver -kill :1
@@ -10,7 +10,7 @@ Part 1: Instll Plugin Manager / Open JMeter
 
 3. (Load Test Machine) Open Jmeter GUI (If disapper. Please run
     cd ~
-    ./apacher-jemeter-5.1.1/bin/jmeter
+    ./apacher-jemeter-5.4.1/bin/jmeter
 
 ============================================================================================
 Part 2: Check and Install Plugin via Plugin Manager
@@ -45,7 +45,7 @@ Part 3: Install plugin via command line
     curl https://jmeter-plugins.org/files/packages/jpgc-casutg-2.8.zip > ~/jpgc-casutg-2.8.zip
     sudo apt-get install -y unzip
     unzip jpgc-casutg-2.8.zip -d jpgc-casutg-2.8
-    cp ~/jpgc-casutg-2.8/lib/ext/jmeter-plugins-casutg-2.8.jar ~/apache-jmeter-5.1.1/lib/ext/
+    cp ~/jpgc-casutg-2.8/lib/ext/jmeter-plugins-casutg-2.8.jar ~/apache-jmeter-5.4.1/lib/ext/
 
 2. Restart JMeter and Open "KickStart_WorkShop_2_4_FirstPage.jmx" 
 

@@ -55,4 +55,4 @@ Step 1: Install require component for remote (Load Test Machine)
    *Remark: Please disable lockscreen feature on menu "Settings" ==> "Privacy" ==> "Screen Lock" ==> Disable "Automatic Screen Lock", "Blank Screen Delay (Never)"
 
 10. (Client) Run jmeter by command:
-   /home/ubuntu/apache-jmeter-5.1.1/bin/jmeter
+   /home/ubuntu/apache-jmeter-5.4.1/bin/jmeter

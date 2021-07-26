@@ -606,7 +606,7 @@ else {
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/praparnlueangphoonlap/Work/Apache_Jmeter_Performance/jmeter_20210710/Result.csv</stringProp>
+          <stringProp name="filename">/home/ubuntu/jmeter-workshop-072021/Result.csv</stringProp>
           <boolProp name="ResultCollector.success_only_logging">true</boolProp>
         </ResultCollector>
         <hashTree/>
