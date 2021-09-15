@@ -188,7 +188,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="2119830637">Powered-By: PHP/7.4.21</stringProp>
+              <stringProp name="2119830639">Powered-By: PHP/7.4.23</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>

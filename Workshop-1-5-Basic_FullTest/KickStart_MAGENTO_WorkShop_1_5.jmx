@@ -121,7 +121,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
+              <stringProp name="698030468">X-Powered-By: PHP/7.4.23</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -463,7 +463,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
+              <stringProp name="698030468">X-Powered-By: PHP/7.4.23</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -805,7 +805,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
+              <stringProp name="698030468">X-Powered-By: PHP/7.4.23</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -1147,7 +1147,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
+              <stringProp name="698030468">X-Powered-By: PHP/7.4.23</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
@@ -1489,7 +1489,7 @@
           <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="MAGENTO Assertion" enabled="true">
             <collectionProp name="Asserion.test_strings">
-              <stringProp name="698030466">X-Powered-By: PHP/7.4.21</stringProp>
+              <stringProp name="698030468">X-Powered-By: PHP/7.4.23</stringProp>
             </collectionProp>
             <stringProp name="Assertion.custom_message"></stringProp>
             <stringProp name="Assertion.test_field">Assertion.response_headers</stringProp>
