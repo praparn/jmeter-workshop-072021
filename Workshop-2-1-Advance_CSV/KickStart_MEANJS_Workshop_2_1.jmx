@@ -9,7 +9,7 @@
         <collectionProp name="Arguments.arguments">
           <elementProp name="BaseIP" elementType="Argument">
             <stringProp name="Argument.name">BaseIP</stringProp>
-            <stringProp name="Argument.value">10.0.1.78</stringProp>
+            <stringProp name="Argument.value">10.21.1.204</stringProp>
             <stringProp name="Argument.metadata">=</stringProp>
           </elementProp>
           <elementProp name="MariaUserName" elementType="Argument">
@@ -612,6 +612,18 @@
             </objProp>
             <stringProp name="filename"></stringProp>
           </ResultCollector>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="InsertDataSet" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding">UTF-8</stringProp>
+            <stringProp name="filename">/home/ubuntu/jmeter-workshop-072021/Workshop-2-1-Advance_CSV/MEANJSData.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="variableNames">firstName,lastName,email,username,password</stringProp>
+          </CSVDataSet>
           <hashTree/>
         </hashTree>
       </hashTree>
